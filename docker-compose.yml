@@ -1,0 +1,7 @@
+version: "3.4"
+services:
+    pman-builder:
+        image: pman-builder:latest
+        volumes:
+            - .:/pman/
+        command: ./pman-build.sh
